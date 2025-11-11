@@ -5,7 +5,8 @@
   <style>
     body {
     background-color: navy /* Navy background */
-    color: white; /* White text */
+    color: white; /* White text */}
+    
     #myDiv {
                 color: navy;
                 font-size: 18px;
@@ -13,12 +14,16 @@
             .container {
                 border: 1px solid gray;
                 margin: 10px;
-            }
+            }}
   </style>
   </head>
   <body>
-  <div> About Me <div>
+  <div id="myDiv"> About Me <div>
   <p> I am an experienced Quality Engineer with 5+ years in the Automotive and Robotics industry. I started out with a B.S. in Engineering Science and Mechanics, with a minor in National Security and Foreign Affairs from Virginia Tech, and have self taught myself various skills as needed for my postion. I started as an intern with my current company and as different responsibilites were place on our team, I took the initiative to learn skills such as software administration, programming in python, developed cross tool automations, and data analysis. My personal brand is "Let Me Try." -- I am the individual who does not like to back down from a challenge, will communicate about risks, and is always willing to learn a new skill or tool out of a desire to constantly learn or a desire to do what is needed to deliver on time, on cost and with quality.</p>
+<div> My Experience </div>
+    <h1> Quality Engineering and Process Development </h1>
+    <h1> Python and Automation </h1>
+    <h1> Data Analysis</h1>
 </body>
 
 
