@@ -27,6 +27,33 @@
          font-family:Georgia, 'Times New Roman', Times, serif;
          font-size: 20px;
          text-align: left;
+          border-top: black;
+         border-top-style: solid;
+         border-top-width: 5px;
+      }
+       .section-d {
+        background-color:#A7CEE8;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-size: 20px;
+         text-align:left;
+         padding-top: 0px;
+         padding-bottom: 0px;
+         border-top: black;
+         border-top-style: solid;
+         border-top-width: 5px;
+      }
+      header {
+       
+        background-color: navy;
+        color:white;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-size: 20px;
+         text-align: left;
+         
+         padding-bottom: 50px;
+         width: 100%;
+
+
       }
       .text-box {
        
@@ -66,6 +93,46 @@
          
 
       }
+      nav {
+            float:inline-start;
+            width: 100%;
+            height: 30px; /* only for demonstration, should be removed */
+            background: #A7CEE8;
+            padding-bottom: 30px;
+            margin-top: 0px;
+          
+            font-size: 20px;
+            text-align:left;
+            color:white;
+              font-family:Georgia, 'Times New Roman', Times, serif;
+              font-size: 20px;
+            border-bottom: black;
+            border-bottom-width: 5px;
+            border-bottom-style: solid;
+
+          }
+
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      section::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      footer{
+        background-color:white;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         font-size: 20px;
+         text-align: left;
+          border-top: black;
+         border-top-style: solid;
+         border-top-width: 5px;
+
+
+      }
       a:link { color: white; }
       a:visited {color: white;}
      
@@ -79,31 +146,22 @@
             /* Other options for align-items: flex-end, center, stretch, baseline */
             gap: 20px; /* Adds a gap between flex items */
           }
-         
+     @media (max-width: 600px) {
+        nav, article {
+          width: 100%;
+          height: auto;
+        }
+      }
 </style>
   </head>
   <body >
-      <div class="text-box3">
-      <p> Navigation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp    <a href="blog.html">Blog</a><p>
-      </div>
-      </div>
-      <div class="container">
-      <div class="text-box">
+    <header>
+      <h1> Anna Woodard, Software Quality, Process Engineering, Python Development and Automation, and Data Analytics</h1>
+    </header>
+      <nav>
+      <p> <a href="blog.html">Blog</a>&nbsp;&nbsp;<p>
+      </nav>
         
-        <h1> Anna Woodard, Software Quality, Process Engineering, Python Development and Automation, and Data Analytics</h1>
-        <div class="text-box2">
-        <h1> Contact Me </h1>
-        <p>You can contact me by email at: </p>
-        <a href="mailto:Woodard.Anna@proton.me">My Professional Email</a>
-        <p>Or, add me on LinkedIn! <a href="https://www.linkedin.com/in/annagrammw/"> <img src="LinkedIn_logo_initials.png.webp" align="bottom" height="18px" alt="Link is not live!"></a></p>
-      </div>
-      </div>
-      
-      
-   
-  
-  </div>
-
   <div class="section-b">
   <h1 style="text-align: left;">   About Me </h1>
 
@@ -116,10 +174,10 @@
        and is always willing to learn a new skill or tool out of a desire to constantly 
        learn or a desire to do what is needed to deliver on time, on cost and with quality.</p>
   </div>
-<hr>
+
   <div class="section-c">
   <h1> My Experience </h1>
-      <a href = "Anna Woodard-Resume.pdf" style="font-size: 14px;font-weight: 600;" download> Click here for my resume! </a> 
+      <a href = "Anna Woodard-Resume.pdf" style="font-size: 14px;font-weight: 600;color: navy;" download> Click here for my resume! </a> 
       <p>I hope to add more to this site, including a blog feed of different projects I work on and updates on what I am currently learning about.</p>
       <h2>Quality Engineering and Process Development </h2>
       <p> I have been working in quality assurance since I started my first in person internship - I have learned and used various tools well known in the quality world:
@@ -146,9 +204,18 @@
       <h2> Data Analysis</h2>
       <p> I have limited but growing experience with data analysis. I have used these skills to pinpoint issues in the cause of unexpected metrics trends, and in my personal life to determine cost savings.</p>
       <p>I am learning more every day and am  currently starting my journey into machine learning applications.</p>
-<hr>
-  
-  </body>
+
+<div class="section-d">
+  <h3 style="text-align: left;"> Contact Me </h3>
+        <p style="text-align: left;">You can contact me by email at: </p>
+        <a href="mailto:Woodard.Anna@proton.me" style="text-align:left; color: navy;">My Professional Email</a>
+        <p style="text-align: left;">Or connect with me on LinkedIn! <a href="https://www.linkedin.com/in/annagrammw/"> <img src="LinkedIn_logo_initials.png.webp" align="bottom" height="18px" alt="Link is not live!"></a></p>
+      <footer>
+        <p>&copy;&nbsp;2025 All rights reserved.</p>
+        </footer>
+</div>
+
+      </body>
 
 
 </html>
